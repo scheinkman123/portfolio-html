@@ -1,40 +1,169 @@
 * {
-    background-color: rgb(34, 31, 31);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 21px;
+    background-color: rgb(34, 31, 31);
     color: white !important;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 
 nav {
     margin-top: 15px;
-}
-
-article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: white;
-    max-height: auto;
-    color: white;
-}
-
-#text {
-    max-width: 100%;
-    height: auto;
-    padding-right: 20px;
-    text-align: right;
+    color: white !important;
 }
 
 #picmatias {
-   max-width: 50%;
-   height: auto;
-   border-radius: 0px;
+    border-radius: 0px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+
 }
 
-footer {
-    color: white;
-    background-color: black;
-    height: 80px;
-    text-align: center;
-    line-height: 80px;
-    margin-bottom: 0px;
+.columns {
+    display: flex;
 }
+
+.card {
+    width: 50%;
+}
+
+.card-title, .card-text {
+    color: black;
+    text-align: right;
+}
+
+
+#formul {
+    background-color: rgb(83, 82, 83);
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgb(0, 0, 0);
+}
+
+#formHeader {
+    background-color: rgb(0, 0, 0);
+}
+
+header span {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    padding: 1rem;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: blanchedalmond;
+    margin-bottom: 25px;
+    font-size: 20px;
+    ;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: blanchedalmond;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+    ;
+}
+
+
+@media screen and (max-width:800px) {
+    .pie-pagina.grupo-1 {
+        width: 90%;
+        grid-template-columns: peteat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+@media screen and (max-width:1330px) {
+    .pie-pagina .grupo-1 .box figure img {
+        align-items: center;
+}
+
+
+.contact {
+    padding: .7rem;
+    overflow: hidden;
+    color: black;
+}
+
+.contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label {
+    font-weight: 700;
+}
+
+.contact input:not([type='submit']), .contact textarea {
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+}
+
+.contact textarea {
+    min-height: 100px;
+}
+
+input[type='submit'] {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    cursor: grab;
+}}

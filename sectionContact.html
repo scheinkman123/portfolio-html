@@ -10,11 +10,12 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
+    <script src="https://kit.fontawesome.com/6fc2c45417.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="estilos.css" />
     <title>MS - Contact</title>
 </head>
 <body>
-    <div id="body">
+  <div id="body">
 		<div class="container-fluid" id="menu">
 			<nav class="navbar navbar-expand-sm navbar-dark">
                 <a class="navbar-brand" href="#" style="text-indent: 15px;">
@@ -28,29 +29,52 @@
                 <div class="collapse navbar-collapse justify-content-end" id="menu"">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">About <span class="sr-only"></span></a>
+                      <a class="nav-link" href="index.html">About <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio</a>
+                      <a class="nav-link" href="sectionPortfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sectionContact.html">Contact</a>
+                      </li>
+                    
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="index.html">About</a>
+                        <a class="dropdown-item" href="sectionPortfolio.html">Portfolio</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="sectionContact.html">Contact</a>
                       </div>
                     </li>
                     </ul>
                 </nav></div>
 
+                <div id="formul">
+                <section class="form-contact">
+                  <header id=formHeader>
+                    <span>
+                      <i class="fa fa-paper-plane"></i>
+                    </span>
+                  </header>
+                </section>
+                <form action="" class="contact">
+                  <label for="names">Name: </label>
+                  <input type="text" name="names" id="names">
 
-    <div id="footer">
-        <footer>Matias Scheinkman 2022</footer>
-		</div>
+                  <label for="number">Number: </label>
+                  <input type="number" name="number" id="number">
+
+                  <label for="email">Email: </label>
+                  <input type="email" name="email" id="email">
+
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message"></textarea>
+                  <input type="submit" value="Send" style="font-size:1.1rem">
+                </form>
+              </div>
+
+                
+              
+              </div>
+              </div>
 </body>
 </html>
