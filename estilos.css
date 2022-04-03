@@ -16,6 +16,10 @@ nav {
     color: white !important;
 }
 
+.ok {
+    padding-right: 15px; 
+}
+
 #picmatias {
     border-radius: 0px;
     display: inline-block;
