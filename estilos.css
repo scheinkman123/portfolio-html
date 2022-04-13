@@ -133,7 +133,9 @@ header span {
 }
 
 .grupo-2 {
-    font-size: 140px;}
+    max-height: 10px;
+    font-size: 140px;
+}
 
 @media screen and (max-width:800px) {
     .pie-pagina.grupo-1 {
